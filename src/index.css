@@ -40,6 +40,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: var(--accent-color) var(--bg-secondary);
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar { width: 5px; }
@@ -83,6 +84,13 @@ button {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.app-container {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 /* ============================================
