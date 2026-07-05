@@ -275,6 +275,15 @@ section {
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-left: -20px;
+}
+
+.navbar-logo-img {
+  height: 250px;
+  width: auto;
+  object-fit: contain;
+  margin: -80px 0;
+  transition: var(--transition);
 }
 
 .logo-text {
@@ -1131,6 +1140,14 @@ section {
   body { cursor: auto; }
   .cursor-dot, .cursor-ring { display: none; }
   
+  .navbar-logo-img {
+    height: 120px;
+    margin: -30px 0;
+  }
+  .navbar-logo {
+    margin-left: -10px;
+  }
+
   .section-title { font-size: 2.4rem; }
   section { padding: 90px 0; }
   

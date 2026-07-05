@@ -44,11 +44,11 @@ const Navbar = ({ onOpenCV }) => {
     >
       <div className="container navbar-container">
         {/* Logo */}
-        <a href="#" className="navbar-logo" style={{ display: 'flex', alignItems: 'center', marginLeft: '-40px' }}>
+        <a href="#" className="navbar-logo">
           <img
             src={logoImg}
             alt="Urugrup Logo"
-            style={{ height: '300px', width: 'auto', objectFit: 'contain', margin: '-100px 0' }}
+            className="navbar-logo-img"
           />
         </a>
 
