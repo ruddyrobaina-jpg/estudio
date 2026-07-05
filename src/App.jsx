@@ -5,19 +5,25 @@ import Services from './components/Services'
 import About from './components/About'
 import Footer from './components/Footer'
 import CVModal from './components/CVModal'
+import CustomCursor from './components/CustomCursor'
 
 function App() {
   const [isCVModalOpen, setIsCVModalOpen] = useState(false);
 
   return (
-    <div className="app-container">
-      <Navbar onOpenCV={() => setIsCVModalOpen(true)} />
-      <Hero />
-      <Services />
-      <About />
-      <Footer />
-      <CVModal isOpen={isCVModalOpen} onClose={() => setIsCVModalOpen(false)} />
-    </div>
+    <>
+      {/* Premium custom cursor (hidden on touch devices via CSS) */}
+      <CustomCursor />
+
+      <div className="app-container">
+        <Navbar onOpenCV={() => setIsCVModalOpen(true)} />
+        <Hero />
+        <Services />
+        <About />
+        <Footer />
+        <CVModal isOpen={isCVModalOpen} onClose={() => setIsCVModalOpen(false)} />
+      </div>
+    </>
   )
 }
 
